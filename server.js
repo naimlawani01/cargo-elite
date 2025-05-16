@@ -52,8 +52,18 @@ app.post("/api/contact", async (req, res) => {
         <p>We have received your message regarding "<strong>${objet}</strong>".</p>
         <p>Our team will get back to you shortly.</p>
         <br/>
-        <p style="color:#007d6f;font-weight:bold;">Elite Cargo</p>
-        <p style="font-size:12px;color:gray;">Merci de nous avoir contactés • Thank you for reaching out</p>
+        <div style="border-top: 2px solid #007d6f; padding-top: 15px; margin-top: 20px;">
+          <p style="color:#007d6f;font-weight:bold;margin:0;">Elite Cargo</p>
+          <p style="margin:5px 0;font-size:14px;">
+            <a href="https://elite-cargo.net" style="color:#007d6f;text-decoration:none;">www.elite-cargo.net</a>
+          </p>
+          <p style="margin:5px 0;font-size:14px;">
+            <span style="color:#007d6f;">📞</span> +224 622 65 25 11
+          </p>
+          <p style="font-size:12px;color:gray;margin-top:10px;">
+            Merci de nous avoir contactés • Thank you for reaching out
+          </p>
+        </div>
       `
     });
 

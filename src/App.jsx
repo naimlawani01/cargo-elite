@@ -4,7 +4,7 @@ import { HelmetProvider, Helmet } from 'react-helmet-async';
 import EliteCargoLandingPage from './EliteCargoLandingPage';
 
 // Google Analytics 4
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Remplacez par votre ID de mesure GA4
+const GA_MEASUREMENT_ID = 'G-ZFVDK7CGLX'; // Remplacez par votre ID de mesure GA4
 
 function App() {
   const { t } = useTranslation();
