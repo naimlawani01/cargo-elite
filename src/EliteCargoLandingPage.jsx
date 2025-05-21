@@ -78,7 +78,7 @@ export default function EliteCargoLandingPage() {
     {
       name: t('team.members.director.name'),
       role: t('team.members.director.role'),
-      image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      image: "images/team/aminouLawani.png"
     },
     {
       name: t('team.members.admin.name'),
@@ -158,12 +158,12 @@ export default function EliteCargoLandingPage() {
         </div>
         <div className="flex items-center gap-8">
           <nav className="hidden md:flex space-x-6 text-sm font-medium">
-            <a href="#about" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.about')}</a>
-            <a href="#services" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.services')}</a>
-            <a href="#team" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.team')}</a>
-            <a href="#stats" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.stats')}</a>
-            <a href="#certifications" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.partners')}</a>
-            <a href="#contact" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.contact')}</a>
+            <a href="https://elite-cargo.net/about" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.about')}</a>
+            <a href="https://elite-cargo.net/services" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.services')}</a>
+            <a href="https://elite-cargo.net/team" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.team')}</a>
+            <a href="https://elite-cargo.net/stats" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.stats')}</a>
+            <a href="https://elite-cargo.net/certifications" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.partners')}</a>
+            <a href="https://elite-cargo.net/contact" className="text-gray-700 hover:text-[#00a199] transition">{t('nav.contact')}</a>
           </nav>
           <LanguageSwitcher />
         </div>
@@ -351,35 +351,8 @@ export default function EliteCargoLandingPage() {
           </div>
         </div>
       </section>
-
-
-      {/* Équipe modernisée */}
-      <section id="team" className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="mb-10 text-left">
-            <div className="h-2 w-16 bg-[#007d6f] mb-4"></div>
-            <h2 className="text-3xl font-bold text-gray-800">{t('team.title')}</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center hover:shadow-xl transition"
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-24 h-24 rounded-full object-cover mb-4 border-4 border-[#00a199]"
-                />
-                <h3 className="text-lg font-bold">{member.name}</h3>
-                <p className="text-gray-600 text-sm">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-       {/* Section Filiales alternée sans cards */}
-       <section className="py-24 px-6 bg-gradient-to-br from-white to-[#f0fdfa]">
+      {/* Section Filiales alternée sans cards */}
+      <section className="py-24 px-6 bg-gradient-to-br from-white to-[#f0fdfa]">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-10 text-left">
             <div className="h-2 w-16 bg-[#007d6f] mb-4"></div>
@@ -410,6 +383,33 @@ export default function EliteCargoLandingPage() {
           </div>
         </div>
       </section>
+
+      {/* Équipe modernisée */}
+      <section id="team" className="py-20 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="mb-10 text-left">
+            <div className="h-2 w-16 bg-[#007d6f] mb-4"></div>
+            <h2 className="text-3xl font-bold text-gray-800">{t('team.title')}</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {team.map((member, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center hover:shadow-xl transition"
+              >
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-24 h-24 rounded-full object-cover mb-4 border-4 border-[#00a199]"
+                />
+                <h3 className="text-lg font-bold">{member.name}</h3>
+                <p className="text-gray-600 text-sm">{member.role}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+       
       {/* Google Map */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">

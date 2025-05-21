@@ -25,7 +25,7 @@ app.post("/api/contact", async (req, res) => {
     await transporter.sendMail({
       from: `"Site Web Elite Cargo" <info@elite-cargo.net>`,
       to: "info@elite-cargo.net",
-      cc: ["l.adani@elite-cargo.net", "k.sekoun@elite-cargo.net"], // <-- AJOUTER VOS COPIES ICI
+      cc: ["nweldone12@gmail.com"], // <-- AJOUTER VOS COPIES ICI
       subject: `📩 Nouveau message via le site – ${objet}`,
       html: `
         <h2>📬 Nouveau message reçu via le site</h2>
